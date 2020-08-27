@@ -1,6 +1,40 @@
-body
-.container {
-  background-image: url(/images/bg.jpg);
+/* .h-fix {
   height: 100%;
-  width: 100%;
+  overflow: hidden;
+} */
+body {
+  background-image: url("images/bg.jpg");
+  background-size: cover;
+  font-family: helvetica, sans-serif;
+  padding: 0% 20%;
+  /* backdrop-filter: brightness(0.5); */
+}
+nav {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+}
+.navBox {
+  display: flex;
+  text-transform: uppercase;
+  font-weight: lighter;
+  justify-content: center;
+  padding: 1% 0%;
+  margin: 0% 1%;
+  font-size: 12px;
+  height: 10%;
+  width: 25%;
+  background-color: #a73634;
+  color: #fefffe;
+  flex-grow: 1;
+}
+#headerImage {
+  /* display: flex; */
+  /* background-image: url("images/top-image.png"); */
+  background-size: 100%;
+  max-height: 100%;
+  max-width: 100%;
+}
+div #headerImage {
+
 }
