@@ -25,37 +25,72 @@ h1 {
   display: flex;
   font-weight: lighter;
   font-size: 15px;
+  margin: 2% 0%;
+  font-weight: normal;
 }
 div p {
   display: flex;
   font-size: 10px;
+  margin: 1% 0%;
+  line-height: 190%;
+}
+#skateboarders {
+  display: grid;
+  grid-template-columns: ;
+
+  grid-template-areas:
+    "lance lance rodney rodney tommy tommy"
+    "lance lance rodney rodney tommy tommy"
+    "steve steve steve steve tommy tommy"
+    "steve steve steve steve tommy tommy";
 }
 #headerImage {
   display: flex;
-  /* background-image: url("images/top-image.png"); */
-  /* background-size: 100%; */
-  /* max-height: 100%; */
+  background-image: url("images/top-image.png");
+  background-position: center;
+  background-size: cover;
+  height: 75%;
   width: 75%;
+  margin: 0 auto;
   /* object-fit: cover; */
 }
 #articles {
   display: inline-flex;
   justify-content: center;
-  width: 75%;
-  margin-right: 12.5%;
-  margin-left: 12.5%;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+#lanceM {
+  grid-area: lance;
+  background-image: url("images/sk8er-4.png");
+}
+#rodneyM {
+  grid-area: rodney;
+  background-image: url("images/sk8er-3.png");
+}
+#steveC {
+  grid-area: steve;
+  background-image: url("images/sk8er-1.png");
+}
+#tommyG {
+  grid-area: tommy;
+  background-image: url("images/sk8er-2.png");
 }
 .articleBox {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 25%;
-  margin: 0% 5%;
+  width: 22%;
+  margin: 0% 1%;
+  padding: 1% 4%;
   background: #fff;
 }
 .date {
   display: flex;
   font-size: 11px;
+  margin: 3% 0%;
+  font-weight: lighter;
 }
 .navBox {
   display: flex;
@@ -72,7 +107,9 @@ div p {
   /* flex-grow: 1; */
 }
 .imageContainer {
-  display: inline-flex;
-  justify-content: center;
-  margin: 3% 0%;
+  display: flex;
+  /* justify-content: center; */
+  height: 300px;
+  margin: -2% 0%;
+  align-items: center;
 }
