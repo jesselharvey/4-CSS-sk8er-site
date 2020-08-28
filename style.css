@@ -2,6 +2,10 @@
   height: 100%;
   overflow: hidden;
 } */
+* {
+  margin: 0 0;
+  padding: 0 0;
+}
 body {
   background-image: url("images/bg.jpg");
   background-size: cover;
@@ -11,8 +15,11 @@ body {
 }
 nav {
   display: flex;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   flex-wrap: nowrap;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
 }
 .navBox {
   display: flex;
@@ -26,15 +33,18 @@ nav {
   width: 25%;
   background-color: #a73634;
   color: #fefffe;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 #headerImage {
-  /* display: flex; */
+  display: flex;
   /* background-image: url("images/top-image.png"); */
-  background-size: 100%;
-  max-height: 100%;
-  max-width: 100%;
+  /* background-size: 100%; */
+  /* max-height: 100%; */
+  width: 75%;
+  /* object-fit: cover; */
 }
-div #headerImage {
-
+.imageContainer {
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 3%;
 }
