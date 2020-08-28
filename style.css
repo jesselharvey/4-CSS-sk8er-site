@@ -36,7 +36,7 @@ div p {
 }
 #skateboarders {
   display: grid;
-  grid-template-columns: ;
+  /* grid-template-columns: 1fr 1fr 1fr; */
 
   grid-template-areas:
     "lance lance rodney rodney tommy tommy"
@@ -46,7 +46,9 @@ div p {
 }
 #headerImage {
   display: flex;
-  background-image: url("images/top-image.png");
+  background-image: url("images/grid.png"), url("images/top-image.png");
+  /* backdrop-filter: opacity(0.5 0); */
+  /* opacity: 0.2, 0; */
   background-position: center;
   background-size: cover;
   height: 75%;
@@ -62,20 +64,36 @@ div p {
   margin-left: 10%;
 }
 #lanceM {
+  min-height: 100px;
   grid-area: lance;
   background-image: url("images/sk8er-4.png");
+  background-size: cover;
+  background-position: center;
+  /* background-color: green; */
 }
 #rodneyM {
+  min-height: 100px;
   grid-area: rodney;
   background-image: url("images/sk8er-3.png");
+  background-size: cover;
+  background-position: center;
+  /* background-color: red; */
 }
 #steveC {
+  min-height: 100px;
   grid-area: steve;
   background-image: url("images/sk8er-1.png");
+  background-size: cover;
+  background-position: center;
+  /* background-color: pink; */
 }
 #tommyG {
+  min-height: 100px;
   grid-area: tommy;
   background-image: url("images/sk8er-2.png");
+  background-size: cover;
+  background-position: center;
+  /* background-color: blue; */
 }
 .articleBox {
   display: flex;
