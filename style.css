@@ -11,7 +11,7 @@ body {
   background-size: cover;
   font-family: helvetica, sans-serif;
   padding: 0% 20%;
-  /* backdrop-filter: brightness(0.5); */
+  backdrop-filter: brightness(0.5);
 }
 nav {
   display: flex;
@@ -34,10 +34,14 @@ div p {
   margin: 1% 0%;
   line-height: 190%;
 }
-#skateboarders {
+#sbsGrid {
   display: grid;
+  align-items: center;
   /* grid-template-columns: 1fr 1fr 1fr; */
-
+  column-gap: 1.5%;
+  row-gap: 12%;
+  margin: 0% auto;
+  width: 75%;
   grid-template-areas:
     "lance lance rodney rodney tommy tommy"
     "lance lance rodney rodney tommy tommy"
@@ -62,6 +66,7 @@ div p {
   width: 80%;
   margin-right: 10%;
   margin-left: 10%;
+  margin-bottom: 5%;
 }
 #lanceM {
   min-height: 100px;
@@ -94,6 +99,71 @@ div p {
   background-size: cover;
   background-position: center;
   /* background-color: blue; */
+}
+/* #sbImg1 {
+  background-image: url("images/sk8-3.png");
+  height: 150px;
+}
+#sbImg2 {
+  background-image: url("images/sk8-4.png");
+  height: 150px;
+}
+#sbImg3 {
+  background-image: url("images/sk8-5.png");
+  height: 150px;
+}
+#sbImg4 {
+  background-image: url("images/sk8-6.png");
+  height: 150px;
+}
+#sbImg5 {
+  background-image: url("images/sk8-7.png");
+  height: 150px;
+}
+#sbImg6 {
+  background-image: url("images/sk8-8.png");
+  height: 150px;
+}
+#sbImg7 {
+  background-image: url("images/sk8-9.png");
+  height: 150px;
+}
+#sbImg8 {
+  background-image: url("images/sk8-10.png");
+  height: 150px;
+}
+#sbImg9 {
+  background-image: url("images/sk8-1.png");
+  height: 150px;
+}
+#sbImg10 {
+  background-image: url("images/sk8-2.png");
+  height: 150px;
+} */
+#skateboardsContainer {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  /* grid-auto-flow: row dense; */
+  /* grid-auto-columns: 10%; */
+  margin: 20% auto;
+  width: 75%;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+  /* grid-template-rows: 1fr; */
+  /* grid-auto-columns: 1fr; */
+}
+.skateboards {
+  /* display: grid; */
+  height: auto;
+  /* width: 10%; */
+}
+.skateboarders {
+  background-size: cover;
+  background-position: bottom;
+  /* background-repeat: no-repeat; */
+  /* width: 90%; */
+  height: 110%;
+  border: #fff solid 3px;
 }
 .articleBox {
   display: flex;
