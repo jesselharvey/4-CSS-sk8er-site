@@ -28,6 +28,18 @@ h1 {
   font-size: 18px;
   margin: 5% 0%;
 }
+header {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1% auto 1%;
+  width: 85%;
+}
+header span {
+  margin-right: 8%;
+  margin-top: 2%;
+  color: #fff;
+  font-weight: lighter;
+}
 footer {
   background-color: #fff;
   display: grid;
@@ -37,20 +49,20 @@ footer {
   border-bottom: grey solid 3px;
   /* grid-template-rows: auto; */
 }
-footer div {
+/* footer div {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
   margin: 3% 5%;
-}
+} */
 footer div p {
   font-size: 12px;
 }
-footer div form {
+form {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
-  margin: 3% 5%;
+  margin: 3% 2%;
   /* flex-flow: row wrap;
   justify-content: center; */
 }
@@ -68,6 +80,15 @@ button {
   width: 50%;
   padding: 1.5% 0%;
   align-self: flex-end;
+}
+svg {
+  height: 2px;
+  width: 7%;
+}
+rect {
+  width: 100%;
+  height: 100%;
+  fill: #fff;
 }
 #sbsGrid {
   display: grid;
@@ -160,6 +181,34 @@ button {
   /* grid-template-rows: 1fr; */
   /* grid-auto-columns: 1fr; */
 }
+#fb1 {
+  color: #475993;
+}
+#rss1 {
+  color: #c49145;
+}
+#twit1 {
+  color: #708dc2;
+}
+#yt1 {
+  color: #a54134;
+}
+.headIcon {
+  font-size: 45px;
+  margin: 0% 0.5%;
+}
+.footer1 {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  margin: 3% 5%;
+}
+.footer2 {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  margin: 3% 5%;
+}
 .skateboards {
   width: 6%;
   margin: 1% 1%;
@@ -213,8 +262,8 @@ button {
 .navBox {
   display: flex;
   text-transform: uppercase;
-  font-weight: lighter;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   padding: 1% 0%;
   margin: 0% 1%;
   font-size: 12px;
@@ -223,7 +272,7 @@ button {
   background-color: #a73634;
   color: #fefffe;
   border-bottom: grey solid 3px;
-  font-weight: bolder;
+  font-weight: lighter;
   /* flex-grow: 1; */
 }
 .imageContainer {
