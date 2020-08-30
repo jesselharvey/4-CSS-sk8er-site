@@ -24,10 +24,9 @@ nav {
 }
 h1 {
   display: flex;
-  font-weight: lighter;
-  font-size: 15px;
-  margin: 2% 0%;
   font-weight: normal;
+  font-size: 18px;
+  margin: 5% 0%;
 }
 footer {
   background-color: #fff;
@@ -35,6 +34,7 @@ footer {
   grid-template-columns: 50% 50%;
   width: 85%;
   margin: 0% auto 5%;
+  border-bottom: grey solid 3px;
   /* grid-template-rows: auto; */
 }
 footer div {
@@ -85,7 +85,7 @@ button {
 }
 #headerImage {
   display: flex;
-  background-image: url("images/grid.png"), url("images/top-image.png");
+  background-image: url("images/top-image.png");
   /* backdrop-filter: opacity(0.5 0); */
   /* opacity: 0.2, 0; */
   background-position: center;
@@ -93,7 +93,13 @@ button {
   height: 75%;
   width: 85%;
   margin: 0 auto;
+  border-bottom: grey solid 3px;
   /* object-fit: cover; */
+}
+#gridImage {
+  opacity: 0.5;
+  min-width: -webkit-fill-available;
+  object-fit: none;
 }
 #articles {
   display: flex;
@@ -149,6 +155,7 @@ button {
   margin: 20% auto 5%;
   width: 85%;
   height: 210px;
+  border-bottom: grey solid 3px;
   /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
   /* grid-template-rows: 1fr; */
   /* grid-auto-columns: 1fr; */
@@ -170,6 +177,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: grey solid 3px;
 }
 .sbNames {
   color: #fff;
@@ -188,17 +196,18 @@ button {
 .articleBox {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   width: 27%;
   height: 245px;
   /* margin: 0% 0%; */
   padding: 1% 2.75%;
   background: #fff;
+  border-bottom: grey solid 3px;
 }
 .date {
   display: flex;
   font-size: 11px;
-  margin: 3% 0%;
+  margin: 6% 0%;
   font-weight: lighter;
 }
 .navBox {
@@ -213,6 +222,8 @@ button {
   width: 25%;
   background-color: #a73634;
   color: #fefffe;
+  border-bottom: grey solid 3px;
+  font-weight: bolder;
   /* flex-grow: 1; */
 }
 .imageContainer {
