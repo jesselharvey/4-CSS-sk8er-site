@@ -10,8 +10,8 @@ body {
   background-image: url("images/bg.jpg");
   background-size: cover;
   font-family: helvetica, sans-serif;
-  padding: 0% 20% 5%;
-  backdrop-filter: brightness(0.5);
+  padding: 1% 20% 5%;
+  backdrop-filter: brightness(0.4);
 }
 nav {
   display: flex;
@@ -27,6 +27,11 @@ h1 {
   font-weight: normal;
   font-size: 18px;
   margin: 5% 0%;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: lighter;
+  margin: 2% 0%;
 }
 header {
   display: flex;
@@ -46,7 +51,8 @@ footer {
   grid-template-columns: 50% 50%;
   width: 85%;
   margin: 0% auto 5%;
-  border-bottom: grey solid 3px;
+  box-shadow: 0px 3px grey;
+  height: 300px;
   /* grid-template-rows: auto; */
 }
 /* footer div {
@@ -61,10 +67,17 @@ footer div p {
 form {
   display: flex;
   flex-flow: column;
-  justify-content: space-around;
-  margin: 3% 2%;
+  justify-content: flex-start;
+  margin: 0% 2%;
+  padding: 5% 0%;
   /* flex-flow: row wrap;
   justify-content: center; */
+}
+textarea {
+  min-width: 115%;
+  margin: 5% 0%;
+  resize: none;
+  box-shadow: 1px 1px 3px grey inset;
 }
 div p {
   display: flex;
@@ -75,6 +88,9 @@ div p {
 input {
   height: 1.5em;
   padding: 0.5% 2%;
+  margin: 3% 0%;
+  min-width: 110%;
+  box-shadow: 1px 1px 3px grey inset;
 }
 button {
   width: 50%;
@@ -110,11 +126,14 @@ rect {
   /* backdrop-filter: opacity(0.5 0); */
   /* opacity: 0.2, 0; */
   background-position: center;
-  background-size: cover;
+  background-size: 140%;
   height: 75%;
-  width: 85%;
+  width: 82%;
   margin: 0 auto;
-  border-bottom: grey solid 3px;
+  border: #fff 8px solid;
+  box-shadow: 0px 5px grey;
+  background-position-x: 35%;
+  background-position-y: 27%;
   /* object-fit: cover; */
 }
 #gridImage {
@@ -176,7 +195,7 @@ rect {
   margin: 20% auto 5%;
   width: 85%;
   height: 210px;
-  border-bottom: grey solid 3px;
+  box-shadow: 0px 3px grey;
   /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
   /* grid-template-rows: 1fr; */
   /* grid-auto-columns: 1fr; */
@@ -196,18 +215,20 @@ rect {
 .headIcon {
   font-size: 45px;
   margin: 0% 0.5%;
+  background: grey;
+  max-height: 41px;
 }
 .footer1 {
   display: flex;
   flex-flow: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   margin: 3% 5%;
 }
 .footer2 {
   display: flex;
-  flex-flow: column;
-  justify-content: space-around;
-  margin: 3% 5%;
+  /* flex-flow: column; */
+  justify-content: center;
+  margin: 0% 5%;
 }
 .skateboards {
   width: 6%;
@@ -222,11 +243,11 @@ rect {
   /* background-repeat: no-repeat; */
   /* width: 90%; */
   height: 120%;
-  border: #fff solid 3px;
+  border: #fff solid 4px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: grey solid 3px;
+  box-shadow: 0px 3px grey;
 }
 .sbNames {
   color: #fff;
@@ -251,7 +272,7 @@ rect {
   /* margin: 0% 0%; */
   padding: 1% 2.75%;
   background: #fff;
-  border-bottom: grey solid 3px;
+  box-shadow: 0px 5px grey;
 }
 .date {
   display: flex;
@@ -271,14 +292,14 @@ rect {
   width: 25%;
   background-color: #a73634;
   color: #fefffe;
-  border-bottom: grey solid 3px;
+  box-shadow: 0px 5px grey;
   font-weight: lighter;
   /* flex-grow: 1; */
 }
 .imageContainer {
   display: flex;
   /* justify-content: center; */
-  height: 300px;
+  height: 350px;
   margin: -2% 0%;
   align-items: center;
 }
