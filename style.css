@@ -18,7 +18,7 @@ nav {
   /* flex-grow: 1; */
   justify-content: space-between;
   flex-wrap: nowrap;
-  width: 85%;
+  width: 87%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -68,34 +68,63 @@ form {
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
-  margin: 0% 2%;
+  margin: 0% 3%;
   padding: 5% 0%;
   /* flex-flow: row wrap;
   justify-content: center; */
 }
+textarea::placeholder {
+  font-size: 12px;
+  color: #bababa;
+  font-family: sans-serif, Helvetica;
+  text-transform: uppercase;
+}
+input::placeholder {
+  font-size: 12px;
+  color: #bababa;
+  font-family: sans-serif, Helvetica;
+  text-transform: uppercase;
+}
 textarea {
-  min-width: 115%;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: fit-content;
+  font-size: 12px;
   margin: 5% 0%;
+  padding: 2%;
   resize: none;
-  box-shadow: 1px 1px 3px grey inset;
+  box-shadow: 3px 3px 3px grey inset;
+  font-family: helvetica, sans-serif;
 }
 div p {
   display: flex;
   font-size: 10px;
   margin: 1% 0%;
   line-height: 190%;
+  overflow: hidden;
 }
 input {
-  height: 1.5em;
-  padding: 0.5% 2%;
+  height: 40%;
+  padding: 1.5% 2%;
   margin: 3% 0%;
-  min-width: 110%;
-  box-shadow: 1px 1px 3px grey inset;
+  min-width: 100%;
+  box-shadow: 0.5px 0.5px 5px grey inset;
 }
 button {
-  width: 50%;
+  width: 65%;
+  height: 100%;
   padding: 1.5% 0%;
-  align-self: flex-end;
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  margin-left: 40%;
+  font-size: 12px;
+  background-color: #a73634;
+  font-weight: lighter;
+  color: #fff;
+  border: none;
 }
 svg {
   height: 2px;
@@ -128,13 +157,18 @@ rect {
   background-position: center;
   background-size: 140%;
   height: 75%;
-  width: 82%;
+  width: 83%;
   margin: 0 auto;
   border: #fff 8px solid;
   box-shadow: 0px 5px grey;
   background-position-x: 35%;
   background-position-y: 27%;
   /* object-fit: cover; */
+}
+#logo {
+  height: 10%;
+  position: absolute;
+  transform: translateY(40px) translateX(15px);
 }
 #gridImage {
   opacity: 0.5;
@@ -212,6 +246,18 @@ rect {
 #yt1 {
   color: #a54134;
 }
+#fb2 {
+  color: #475993;
+}
+#rss2 {
+  color: #c49145;
+}
+#twit2 {
+  color: #708dc2;
+}
+#yt2 {
+  color: #a54134;
+}
 .headIcon {
   font-size: 45px;
   margin: 0% 0.5%;
@@ -226,9 +272,15 @@ rect {
 }
 .footer2 {
   display: flex;
-  /* flex-flow: column; */
-  justify-content: center;
-  margin: 0% 5%;
+  flex-flow: column;
+  /* justify-content: center; */
+  margin: 0% 4%;
+}
+/* .iconContainer {
+} */
+.footerIcon {
+  font-size: 130%;
+  margin: 3% auto;
 }
 .skateboards {
   width: 6%;
@@ -273,6 +325,13 @@ rect {
   padding: 1% 2.75%;
   background: #fff;
   box-shadow: 0px 5px grey;
+}
+.readMore {
+  margin: 15% auto 0%;
+  color: #a44138;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
 }
 .date {
   display: flex;
